@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мои заявки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container"> 
+            <div class="logo">  <img src="1.jpg" alt="Logo" height="60">  </div>
+            <div class="logo-text">Садись, прокачу</div>
+        </div>
+          <nav>
+            <ul>
+                 <li><a href="new_request.html">Новая заявка</a></li>
+                  <li><a href="registration.html">Выйти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="requests-box">
+            <h2>Мои заявки</h2>
+            <table id="requestsTable">
+                <thead>
+                    <tr>
+                        <th>Дата бронирования</th>
+                        <th>Автомобиль</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically inserted with JS -->
+                </tbody>
+            </table>
+           <a href="new_request.html"><button>Сформировать новую заявку</button></a>
+        </div>
+    </main>
+</body>
+</html>
