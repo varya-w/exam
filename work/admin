@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="navbar">
+        <a href="admin.html" class="navbar-brand">
+            <img src="1.jpg" class="logo"alt="Грузовозофф">
+            <span>Грузовозофф</span>
+        </a>
+        <ul class="navbar-nav">
+            <li><a href="admin.html">Все заявки</a></li>
+            <li><a href="index.html">Выйти</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Панель администратора</h1>
+        <div class="admin-requests">
+            <div class="request-card">
+                <h3>Заявка #1 от Пользователь 1</h3>
+                <p><strong>Дата:</strong> 15.06.2024 10:00</p>
+                <p><strong>Груз:</strong> Мебель (хрупкое)</p>
+                <p><strong>Статус:</strong> На рассмотрении</p>
+                <div class="btn-container">
+                    <button class="btn btn-danger">Удалить</button>
+                </div>
+            </div>
+            <div class="request-card">
+                <h3>Заявка #2 от Пользователь 2</h3>
+                <p><strong>Дата:</strong> 20.06.2024 14:30</p>
+                <p><strong>Груз:</strong> Бытовая техника</p>
+                <p><strong>Статус:</strong> На рассмотрении</p>
+                 <div class="btn-container">
+                    <button class="btn btn-danger">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
