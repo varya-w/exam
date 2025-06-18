@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая заявка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="create-request.html" class="navbar-brand">
+            <img src="1.jpg" class="logo"alt="Грузовозофф">
+            <span>Грузовозофф</span>
+        </a>
+        <ul class="navbar-nav">
+            <li><a href="requests.html">Мои заявки</a></li>
+            <li><a href="create-request.html">Новая заявка</a></li>
+            <li><a href="index.html">Выйти</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Новая заявка на перевозку</h1>
+        <form id="requestForm">
+            <div class="form-group">
+                <label for="transportDate">Дата и время перевозки:</label>
+                <input type="datetime-local" id="transportDate" name="transportDate" required>
+            </div>
+            <div class="form-group">
+                <label for="cargoWeight">Вес груза (кг):</label>
+                <input type="number" id="cargoWeight" name="cargoWeight" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="cargoDimensions">Габариты груза (Д×Ш×В, см):</label>
+                <input type="text" id="cargoDimensions" name="cargoDimensions" placeholder="100×50×70" required>
+            </div>
+            <div class="form-group">
+                <label for="cargoType">Тип груза:</label>
+                <select id="cargoType" name="cargoType" required>
+                    <option value="">Выберите тип</option>
+                    <option value="fragile">Хрупкое</option>
+                    <option value="furniture">Мебель</option>
+                    <option value="appliances">Бытовая техника</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fromAddress">Адрес отправления:</label>
+                <input type="text" id="fromAddress" name="fromAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="toAddress">Адрес доставки:</label>
+                <input type="text" id="toAddress" name="toAddress" required>
+             <div class="btn-container">
+                <button type="submit" class="btn">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
